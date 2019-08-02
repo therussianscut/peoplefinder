@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Resources\PersonResource;
 use App\Http\Resources\PersonResourceCollection;
-use Illuminate\Http\Request;
 use App\Person;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class PersonController extends Controller
 {
@@ -55,7 +56,7 @@ class PersonController extends Controller
             'city' => 'required',
 
 
-            ]);
+        ]);
 
 
 
